@@ -1,5 +1,7 @@
 board = [" "," "," "," "," "," "," "," "," "]
-
+def current_player(board)
+  turn_count % 2 == 0 ? "X" : "O"
+end
 def turn_count(board)
   counter = 0
   board.each do |index|
@@ -10,9 +12,7 @@ def turn_count(board)
   counter
 end
 
-def current_player(board)
-  turn_count % 2 == 0 ? "X" : "O"
-end
+
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
