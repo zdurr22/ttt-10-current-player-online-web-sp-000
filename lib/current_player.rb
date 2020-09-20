@@ -11,7 +11,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  turn_count % 2 == 0 ? puts "X" : puts "O"
+  turn_count % 2 == 0 ? "X" : "O"
 end
 
 def display_board(board)
